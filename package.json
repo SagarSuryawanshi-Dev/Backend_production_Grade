@@ -1,0 +1,23 @@
+{
+  "name": "backend_production",
+  "version": "1.0.0",
+  "description": "this project totally focued on production  grade app.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SagarSuryawanshi-Dev/Backend_production_Grade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SagarSuryawanshi-Dev/Backend_production_Grade/issues"
+  },
+  "homepage": "https://github.com/SagarSuryawanshi-Dev/Backend_production_Grade#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
