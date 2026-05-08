@@ -1,12 +1,11 @@
-console.log("🔥 STARTING SERVER");
+console.log("Server File");
 
-
-import app from "./app.js"
+import app from "./app.js";
 try {
-    const PORT = 7000;
-    app.listen(PORT, () => {
-        console.log(`Server is running on ${PORT}`);
-    });
+  const PORT = 7000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT}`);
+  });
 } catch (err) {
-    console.error("ERROR DURING START:", err);
+  console.error("ERROR DURING START:", err);
 }
