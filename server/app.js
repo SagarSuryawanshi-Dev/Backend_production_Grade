@@ -2,8 +2,10 @@ import express from "express";
 import conntectDB from "./config/db.js";
 import cors from "cors";
 import dotenv from "dotenv";
+import {errorHandler,notFound } from "./middleware/errorMiddleware.js";
 
 const app = express();
+
 
 
 
@@ -21,5 +23,9 @@ app.get("/", (req, res) => {
 app.get("/api/products", (req, res) => {
   res.send("products are working");
 });
+
+app.use(notFound)
+app.use(errorHandler);
+
 
 export default app;
